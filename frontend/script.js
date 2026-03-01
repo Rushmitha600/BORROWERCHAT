@@ -1068,10 +1068,15 @@ function clearChat() {
 // ============================================
 
 function navigateTo(page) {
+    console.log('Navigate to:', page);
+    
     document.getElementById('faqContainer').style.display = 'none';
     document.getElementById('emiPage').classList.add('hidden');
     document.getElementById('eligibilityPage').classList.add('hidden');
     document.getElementById('loanSelectionPage').classList.add('hidden');
+    
+    // ADD THIS LINE - Hide Ask Finova button
+    document.getElementById('minimizedAI').style.display = 'none';
     
     if (page === 'emi') {
         document.getElementById('emiPage').classList.remove('hidden');
@@ -1083,6 +1088,8 @@ function navigateTo(page) {
 }
 
 function goBack() {
+    console.log('Going back to FAQ');
+    
     resetEMICalculator();
     resetEligibilityChecker();
     
@@ -1090,6 +1097,9 @@ function goBack() {
     document.getElementById('emiPage').classList.add('hidden');
     document.getElementById('eligibilityPage').classList.add('hidden');
     document.getElementById('loanSelectionPage').classList.add('hidden');
+    
+    // ADD THIS LINE - Show Ask Finova button again on FAQ page
+    document.getElementById('minimizedAI').style.display = 'flex';
 }
 
 // ============================================
@@ -1386,16 +1396,32 @@ function checkEligibility() {
 // ============================================
 
 function toggleDarkMode() {
-    state.isDarkMode = !state.isDarkMode;
-    document.body.classList.toggle('dark-theme', state.isDarkMode);
+    document.body.classList.toggle('dark-mode');
     
+    // Update icon
     const icon = document.querySelector('#themeToggle i');
-    if (icon) {
-        icon.className = state.isDarkMode ? 'fas fa-sun' : 'fas fa-moon';
+    if (document.body.classList.contains('dark-mode')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     }
     
-    localStorage.setItem('loanfaq-theme', state.isDarkMode ? 'dark' : 'light');
+    // Save preference
+    localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
 }
+
+// Load saved theme on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        const icon = document.querySelector('#themeToggle i');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+});
 
 function loadSavedTheme() {
     const savedTheme = localStorage.getItem('loanfaq-theme');
@@ -1480,48 +1506,7 @@ bankSilhouette.className = 'bank-silhouette';
 document.body.appendChild(bankSilhouette);
 
 
-// Add to your script.js
-function createBankAnimations() {
-    // Create floating particles (stars/diamonds)
-    const particles = ['✦', '✧', '⬩', '⬨', '⬪', '⬫', '💫', '✨'];
-    for(let i = 0; i < 25; i++) {
-        setTimeout(() => {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDuration = (Math.random() * 12 + 10) + 's';
-            particle.style.fontSize = (Math.random() * 15 + 15) + 'px';
-            particle.innerHTML = particles[Math.floor(Math.random() * particles.length)];
-            document.body.appendChild(particle);
-            setTimeout(() => particle.remove(), 20000);
-        }, i * 200);
-    }
-    
-    // Create floating coins
-    const coins = ['💰', '🪙', '💎', '🏦'];
-    for(let i = 0; i < 20; i++) {
-        setTimeout(() => {
-            const coin = document.createElement('div');
-            coin.className = 'coin';
-            coin.style.left = Math.random() * 100 + '%';
-            coin.style.animationDuration = (Math.random() * 10 + 8) + 's';
-            coin.style.fontSize = (Math.random() * 15 + 20) + 'px';
-            coin.innerHTML = coins[Math.floor(Math.random() * coins.length)];
-            document.body.appendChild(coin);
-            setTimeout(() => coin.remove(), 20000);
-        }, i * 300);
-    }
-    
-    // Create scrolling bank strip
-    const bankStrip = document.createElement('div');
-    bankStrip.className = 'bank-strip';
-    bankStrip.innerHTML = '<span>🏦🏦🏦🏦🏦🏦🏦🏦🏦🏦</span><span>🏦🏦🏦🏦🏦🏦🏦🏦🏦🏦</span>';
-    document.body.appendChild(bankStrip);
-}
 
-// Run animations
-setInterval(createBankAnimations, 20000);
-createBankAnimations();
 
 // ============================================
 // MAKE FUNCTIONS GLOBAL
@@ -1548,3 +1533,51 @@ window.searchFAQ = searchFAQ;
 window.clearChat = clearChat;
 window.resetEMICalculator = resetEMICalculator;
 window.resetEligibilityChecker = resetEligibilityChecker;
+
+// Force hide Ask Finova button on EMI and Eligibility pages
+function forceHideAskFinova() {
+    const askFinovaBtn = document.getElementById('minimizedAI');
+    const emiPage = document.getElementById('emiPage');
+    const eligibilityPage = document.getElementById('eligibilityPage');
+    
+    // Check every second if we're on EMI or Eligibility page
+    setInterval(function() {
+        // If EMI page is visible OR Eligibility page is visible
+        if (!emiPage.classList.contains('hidden') || !eligibilityPage.classList.contains('hidden')) {
+            askFinovaBtn.style.display = 'none';
+            askFinovaBtn.classList.add('hidden');
+        } else {
+            // Only show on FAQ page if AI is minimized
+            const aiPage = document.getElementById('aiPage');
+            if (aiPage.style.display !== 'block') {
+                askFinovaBtn.style.display = 'flex';
+                askFinovaBtn.classList.remove('hidden');
+            }
+        }
+    }, 100); // Check every 100ms (very fast)
+}
+
+// Run it when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    forceHideAskFinova();
+});
+
+// Add this at the beginning of your file
+function showAskFinovaOnFAQ() {
+    const askBtn = document.getElementById('minimizedAI');
+    const aiPage = document.getElementById('aiPage');
+    const emiPage = document.getElementById('emiPage');
+    const eligibilityPage = document.getElementById('eligibilityPage');
+    
+    // Only show on FAQ page when AI is minimized
+    if (aiPage.style.display !== 'block' && 
+        emiPage.classList.contains('hidden') && 
+        eligibilityPage.classList.contains('hidden')) {
+        askBtn.style.display = 'flex';
+    } else {
+        askBtn.style.display = 'none';
+    }
+}
+
+// Call this function whenever page changes
+setInterval(showAskFinovaOnFAQ, 500);

@@ -1,7 +1,3 @@
-// ============================================
-// COMPLETE WORKING LOANFAQ CHATBOT
-// All original logic preserved WITH BACKEND API
-// ============================================
 
 console.log('Borrower Assistant AI - Loading...');
 
@@ -33,7 +29,7 @@ const elements = {
 };
 
 // ============================================
-// FAQ DATABASE (Your Original FAQ Data)
+// FAQ DATABASE
 // ============================================
 
 const faqDatabase = [
@@ -558,7 +554,7 @@ function updateCurrentTime() {
 }
 
 // ============================================
-// AI PAGE FUNCTIONS - WITH BACKEND API (YOUR ORIGINAL LOGIC)
+// AI PAGE FUNCTIONS - WITH BACKEND API 
 // ============================================
 
 function minimizeAI() {
@@ -573,7 +569,7 @@ function maximizeAI() {
     document.getElementById('faqContainer').style.display = 'none';
 }
 
-// ========== YOUR ORIGINAL sendMessage WITH API CALL ==========
+// ==========  sendMessage WITH API CALL ==========
 function sendMessage() {
     const input = document.getElementById('chatInput');
     if (!input) return;
@@ -586,7 +582,7 @@ function sendMessage() {
 
     showTypingIndicator();
 
-    // 🔥 CALL BACKEND API (YOUR ORIGINAL CODE)
+    // 🔥 CALL BACKEND API 
     fetch('http://127.0.0.1:5000/api/chat', {
         method: 'POST',
         headers: {
@@ -608,7 +604,7 @@ function sendMessage() {
     });
 }
 
-// ========== YOUR ORIGINAL addMessage ==========
+// ========== addMessage ==========
 // helper that turns a raw text reply into a DOM node or nodes, applying
 // simple bullet-point formatting when the message contains the • separator
 function formatBotReply(text) {
@@ -665,7 +661,7 @@ function addAIMessage(text) {
     addMessage(text, 'bot');
 }
 
-// ========== YOUR ORIGINAL showTypingIndicator ==========
+// ==========  showTypingIndicator ==========
 function showTypingIndicator() {
     const chatArea = document.getElementById('chatMessages');
     if (!chatArea) return;
@@ -684,13 +680,13 @@ function showTypingIndicator() {
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
-// ========== YOUR ORIGINAL removeTypingIndicator ==========
+// ==========  removeTypingIndicator ==========
 function removeTypingIndicator() {
     const typing = document.getElementById('typingIndicator');
     if (typing) typing.remove();
 }
 
-// ========== YOUR ORIGINAL getResponse (Fallback) ==========
+// ==========  getResponse (Fallback) ==========
 function getLocalResponse(message) {
     const lower = message.toLowerCase();
     
@@ -722,7 +718,7 @@ function getLocalResponse(message) {
 }
 
 // ============================================
-// UPDATE CATEGORY COUNTS
+// CATEGORY COUNTS
 // ============================================
 
 function updateCategoryCounts() {
@@ -750,7 +746,7 @@ function updateCategoryCounts() {
 }
 
 // ============================================
-// FAQ FUNCTIONS (YOUR ORIGINAL LOGIC)
+// FAQ FUNCTIONS 
 // ============================================
 
 function loadAllFAQs() {
@@ -1064,7 +1060,7 @@ function clearChat() {
 }
 
 // ============================================
-// NAVIGATION FUNCTIONS (YOUR ORIGINAL LOGIC)
+// NAVIGATION FUNCTIONS 
 // ============================================
 
 function navigateTo(page) {
@@ -1103,7 +1099,7 @@ function goBack() {
 }
 
 // ============================================
-// EMI CALCULATOR FUNCTIONS (YOUR ORIGINAL LOGIC)
+// EMI CALCULATOR FUNCTIONS 
 // ============================================
 
 function resetEMICalculator() {
@@ -1268,7 +1264,7 @@ function calculateMissedPayment() {
 }
 
 // ============================================
-// ELIGIBILITY CHECKER FUNCTIONS (YOUR ORIGINAL LOGIC)
+// ELIGIBILITY CHECKER FUNCTIONS 
 // ============================================
 
 function checkEligibility() {
@@ -1391,9 +1387,7 @@ function checkEligibility() {
     }
 }
 
-// ============================================
-// THEME FUNCTIONS
-// ============================================
+
 
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
@@ -1433,9 +1427,7 @@ function loadSavedTheme() {
     }
 }
 
-// ============================================
-// EVENT LISTENERS
-// ============================================
+
 
 function setupEventListeners() {
     // Enter key for main chat
@@ -1461,9 +1453,6 @@ function setupEventListeners() {
     }
 }
 
-// ============================================
-// BANK THEMED ANIME EFFECTS (YOUR ORIGINAL)
-// ============================================
 
 // Create floating coins
 function createCoin() {

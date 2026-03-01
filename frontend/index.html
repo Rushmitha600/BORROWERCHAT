@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoanFAQ - Your Loan Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="coins-container">
+        <div class="coin" style="left:10%; animation-duration:12s;">💰</div>
+        <div class="coin" style="left:30%; animation-duration:15s;">🪙</div>
+        <div class="coin" style="left:50%; animation-duration:10s;">💰</div>
+        <div class="coin" style="left:70%; animation-duration:18s;">🪙</div>
+        <div class="coin" style="left:85%; animation-duration:14s;">💰</div>
+    </div>
+    <!-- AI ASSISTANT PAGE (Opens First) -->
+    <div class="ai-page" id="aiPage">
+        <button class="minimize-btn" onclick="minimizeAI()">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to FAQ</span>
+        </button>
+
+        <div class="ai-content">
+            <div class="ai-left">
+                <div class="ai-avatar-large">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="ai-name-large">Finova</div>
+            </div>
+
+            <div class="ai-right">
+                <div class="chat-card">
+                    <div class="chat-card-header">
+                        <i class="fas fa-circle" style="color: #10b981;"></i>
+                        <span>Ask Finova</span>
+                    </div>
+                    <div class="chat-messages-area" id="chatMessages"></div>
+                    <div class="chat-input-section">
+                        <input type="text" id="chatInput" placeholder="Type your message here...">
+                        <button class="chat-send-btn" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MINIMIZED AI BUTTON -->
+    <div class="minimized-ai hidden" id="minimizedAI" onclick="maximizeAI()">
+        <i class="fas fa-robot"></i>
+        <span>Ask Finova</span>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <!-- MAIN FAQ APP CONTAINER -->
+    <div class="app-container" id="faqContainer">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <span>LoanFAQ</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="tool-icons">
+                    <button class="tool-icon" onclick="navigateTo('emi')" title="EMI Calculator">
+                        <i class="fas fa-calculator"></i>
+                    </button>
+                    <button class="tool-icon" onclick="navigateTo('eligibility')" title="Check Eligibility">
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                    <button class="tool-icon" id="themeToggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="status">
+                    <span class="status-dot active"></span>
+                    <span>Online</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content - 3 Column Layout -->
+        <main class="main-content">
+            <!-- LEFT SIDEBAR - Categories/Topics -->
+            <aside class="sidebar left-sidebar">
+                <div class="sidebar-section">
+                    <h3 class="section-title">
+                         <i class="fas fa-lightbulb"></i>
+                         <span>Quick Suggestions</span>
+                         <span class="badge">50</span>
+                    </h3>
+                    <div class="categories-list" id="categoriesList">
+                        <div class="category-item active" data-category="all" onclick="filterByCategory('all', this)">
+                            <i class="fas fa-th-large"></i>
+                            <span>All Questions</span>
+                            <span class="count">50</span>
+                        </div>
+                        <div class="category-item" data-category="interest" onclick="filterByCategory('interest', this)">
+                            <i class="fas fa-percent"></i>
+                            <span>Interest Rates</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="eligibility" onclick="filterByCategory('eligibility', this)">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Eligibility</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="documents" onclick="filterByCategory('documents', this)">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Documents</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="repayment" onclick="filterByCategory('repayment', this)">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Repayment</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="prepayment" onclick="filterByCategory('prepayment', this)">
+                            <i class="fas fa-clock"></i>
+                            <span>Prepayment</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="credit score" onclick="filterByCategory('credit score', this)">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Credit Score</span>
+                            <span class="count">0</span>
+                        </div>
+                        <!-- additional categories -->
+                        <div class="category-item" data-category="process" onclick="filterByCategory('process', this)">
+                            <i class="fas fa-cogs"></i>
+                            <span>Process</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="charges" onclick="filterByCategory('charges', this)">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span>Charges</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="terms" onclick="filterByCategory('terms', this)">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Terms</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="loan type" onclick="filterByCategory('loan type', this)">
+                            <i class="fas fa-list"></i>
+                            <span>Loan Type</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="insurance" onclick="filterByCategory('insurance', this)">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Insurance</span>
+                            <span class="count">0</span>
+                        </div>
+                        <div class="category-item" data-category="tax" onclick="filterByCategory('tax', this)">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Tax</span>
+                            <span class="count">0</span>
+                        </div>
+                    </div>
+                </div>
+
+ 
+            </aside>
+
+            <!-- MIDDLE SECTION - Chat Area (FIXED) -->
+            <section class="chat-section">
+                <div class="chat-header">
+                    <div class="chat-info">
+                        <div class="bot-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3>LoanFAQ Assistant</h3>
+                            <p class="bot-status" id="timeGreeting">Good evening! 🔥 How can I help?</p>
+                        </div>
+                    </div>
+                    <div class="chat-stats">
+                        <span class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span id="currentTime">07:36 PM</span>
+                        </span>
+                        <button class="stat clear-chat-btn" onclick="clearChat()" title="Clear Chat">
+                            <i class="fas fa-trash-alt"></i>
+                            <span>Clear</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Messages Container (FIXED) -->
+                <div class="messages-container" id="messagesContainer">
+                    <!-- Welcome Message -->
+                    <div class="message bot">
+                        <div class="message-content">
+                            <div class="message-text">
+                                <p>👋 Hello! I'm here to help with your loan questions. Ask anything about loans, interest rates, eligibility, or documents.</p>
+                            </div>
+                            <div class="message-footer">
+                                <span class="time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator hidden" id="typingIndicator">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>Finova is typing...</span>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input type="text" 
+                               id="messageInput"
+                               placeholder="Ask me anything... (Press Enter to send)"
+                               autocomplete="off">
+                        <button class="send-btn" id="sendBtn" onclick="sendChatMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="input-hint">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Try asking about interest rates, eligibility, or documents</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT SIDEBAR - Questions List (Appears when topic clicked) -->
+            <aside class="sidebar right-sidebar">
+                <div class="sidebar-section">
+                    <h3 class="section-title">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Questions</span>
+                        <span class="badge" id="questionsCount">15</span>
+                    </h3>
+                    
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" 
+                               id="faqSearch" 
+                               placeholder="Search questions...">
+                    </div>
+
+                    <div class="questions-list" id="questionsList">
+                        <!-- Questions load here when category clicked -->
+                        <div class="loading-questions">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <span>Loading questions...</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer with Stats -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="tech-info">
+                        <i class="fas fa-brain"></i>
+                        <span id="totalFAQs">50</span> FAQs • <span id="responseTime">&lt; 2 min</span> response time
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <span class="stat-item">
+                        <i class="fas fa-star" style="color: #ffc107;"></i>
+                        <span>98% Satisfaction</span>
+                    </span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- EMI CALCULATOR PAGE (Hidden by default) -->
+    <div class="calculator-page hidden" id="emiPage">
+        <div class="calculator-header">
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Back to FAQ
+            </button>
+            <h2><i class="fas fa-calculator"></i> EMI Calculator</h2>
+            <button class="select-loan-btn" onclick="showLoanSelection()">
+                <i class="fas fa-hand-holding-usd"></i> Select Loan
+            </button>
+        </div>
+        
+        <div class="calculator-content">
+            <div class="input-group">
+                <label for="emiLoanAmount">Loan Amount (₹)</label>
+                <input type="number" id="emiLoanAmount" value="500000">
+            </div>
+            <div class="input-group">
+                <label for="emiInterestRate">Interest Rate (%)</label>
+                <input type="number" id="emiInterestRate" value="10.5" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="emiTenure">Tenure (Years)</label>
+                <input type="number" id="emiTenure" value="5">
+            </div>
+            <div class="input-group">
+                <label for="emiCreditScore">Credit Score</label>
+                <input type="number" id="emiCreditScore" placeholder="Enter credit score (300-900)" min="300" max="900" value="750">
+            </div>
+            <button class="calculate-btn" onclick="calculateEMI()">
+                <i class="fas fa-calculator"></i> Calculate EMI
+            </button>
+            <div id="emiResult" class="result-card hidden">
+                <h3>Your Monthly EMI</h3>
+                <div class="result-amount" id="emiAmount">₹0</div>
+                <div class="result-details">
+                    <p>Total Interest: <span id="totalInterest">₹0</span></p>
+                    <p>Total Payment: <span id="totalPayment">₹0</span></p>
+                </div>
+            </div>
+            <div class="missed-payment-section">
+                <h4><i class="fas fa-exclamation-triangle"></i> Missed EMI Payment?</h4>
+                <div class="missed-payment-inputs">
+                    <div class="input-group-small">
+                        <label for="missedMonths">Months Missed</label>
+                        <select id="missedMonths">
+                            <option value="1">1 Month</option>
+                            <option value="2">2 Months</option>
+                            <option value="3">3 Months</option>
+                        </select>
+                    </div>
+                    <button class="calculate-missed-btn" onclick="calculateMissedPayment()">
+                        <i class="fas fa-calculator"></i> Calculate
+                    </button>
+                </div>
+                <div id="missedPaymentResult" class="missed-payment-result hidden">
+                    <p>Next Month Payment: <strong id="nextMonthAmount">₹0</strong></p>
+                    <small>Includes original EMI + 2% penalty per month</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOAN SELECTION PAGE -->
+    <div class="calculator-page hidden" id="loanSelectionPage">
+        <div class="calculator-header">
+            <button class="back-btn" onclick="hideLoanSelection()">
+                <i class="fas fa-arrow-left"></i> Back to Calculator
+            </button>
+            <h2><i class="fas fa-hand-holding-usd"></i> Select Loan Type</h2>
+        </div>
+        
+        <div class="loan-selection-container">
+            <div class="loan-option-card" onclick="selectLoanAndCalculate('personal')">
+                <i class="fas fa-user"></i>
+                <div class="loan-info">
+                    <h4>Personal Loan</h4>
+                    <p class="loan-rate">10.5% p.a.</p>
+                    <small>₹10,000 - ₹25,00,000</small>
+                </div>
+            </div>
+            <div class="loan-option-card" onclick="selectLoanAndCalculate('home')">
+                <i class="fas fa-home"></i>
+                <div class="loan-info">
+                    <h4>Home Loan</h4>
+                    <p class="loan-rate">8.5% p.a.</p>
+                    <small>₹5,00,000 - ₹1,00,00,000</small>
+                </div>
+            </div>
+            <div class="loan-option-card" onclick="selectLoanAndCalculate('car')">
+                <i class="fas fa-car"></i>
+                <div class="loan-info">
+                    <h4>Car Loan</h4>
+                    <p class="loan-rate">9.5% p.a.</p>
+                    <small>₹1,00,000 - ₹50,00,000</small>
+                </div>
+            </div>
+            <div class="loan-option-card" onclick="selectLoanAndCalculate('education')">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="loan-info">
+                    <h4>Education Loan</h4>
+                    <p class="loan-rate">11% p.a.</p>
+                    <small>₹50,000 - ₹50,00,000</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ELIGIBILITY CHECKER PAGE -->
+    <div class="calculator-page hidden" id="eligibilityPage">
+        <div class="calculator-header">
+            <button class="back-btn" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Back to FAQ
+            </button>
+            <h2><i class="fas fa-check-circle"></i> Eligibility Checker</h2>
+        </div>
+        
+        <div class="eligibility-form-container">
+            <div class="input-group">
+                <label for="eligibilityIncome">Monthly Income (₹)</label>
+                <input type="number" id="eligibilityIncome" value="50000">
+            </div>
+            <div class="input-group">
+                <label for="eligibilityAge">Age</label>
+                <input type="number" id="eligibilityAge" value="30">
+            </div>
+            <div class="input-group">
+                <label for="eligibilityCreditScore">Credit Score</label>
+                <input type="number" id="eligibilityCreditScore" placeholder="Enter credit score (300-900)" min="300" max="900" value="750">
+            </div>
+            <div class="input-group">
+                <label for="eligibilityExistingEmi">Existing EMI (₹)</label>
+                <input type="number" id="eligibilityExistingEmi" value="0">
+            </div>
+            <button class="calculate-btn" onclick="checkEligibility()">
+                <i class="fas fa-search"></i> Check Eligibility
+            </button>
+            <div id="eligibilityResult" class="eligibility-result-below"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

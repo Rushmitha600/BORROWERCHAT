@@ -1,0 +1,29 @@
+[
+  {
+    "timestamp": "2026-02-13T12:36:29.393605",
+    "user": "What documents are required for loan?",
+    "bot": "\ud83d\udcc1 \ud83d\udccb Complete document checklist:\n\n\u2705 IDENTITY PROOF (Any one)\n\u2022 Aadhar Card\n\u2022 PAN Card\n\u2022 Passport\n\u2022 Voter ID\n\u2022 Driving License\n\n\u2705 ADDRESS PROOF (Any one)\n\u2022 Aadhar Card\n\u2022 Passport\n\u2022 Utility Bill (<3 months)\n\u2022 Rent Agreement\n\n\u2705 INCOME PROOF\n\u2022 Salary slips (last 3 months)\n\u2022 Bank statements (last 6 months)\n\u2022 Form 16 / IT Returns\n\n\u2705 PHOTOGRAPHS\n\u2022 2 passport size photos\n\n\ud83d\udd0d **Related topics you might like:**\n\u2022 Use our EMI calculator for personalized numbers!"
+  },
+  {
+    "timestamp": "2026-02-13T12:36:34.762762",
+    "user": "What are your current interest rates?",
+    "bot": "\ud83d\udcca Our interest rates start from 10.5% p.a. and go up to 24% p.a. based on your credit profile:\n\u2022 750+ CIBIL: 10.5-14%\n\u2022 700-749: 14-18%\n\u2022 650-699: 18-22%\n\u2022 Below 650: 22-24%\n\n\ud83d\udd0d **Related topics you might like:**\n\u2022 Is interest rate fixed or floating?\n\u2022 How is interest calculated on loans?"
+  },
+  {
+    "timestamp": "2026-02-13T12:36:39.149035",
+    "user": "hi",
+    "bot": "\ud83d\udcab Hey there! I can calculate EMIs, check eligibility, and answer 100+ loan questions. What do you need?"
+  },
+  {
+    "timestamp": "2026-02-13T16:57:18.255922",
+    "user": "good night",
+    "bot": "\ud83d\udcab Hey there! I can calculate EMIs, check eligibility, and answer 100+ loan questions. What do you need?"
+  },
+  {
+    "timestamp": "2026-02-13T16:57:47.118926",
+    "user": "hi",
+    "bot": "\ud83d\udc4b Hello! I'm your AI Loan Assistant. Ready to help with EMI calculations, eligibility checks, and all your loan questions!"
+  }
+]{"user_message": "hi", "bot_response": "Hey! Great to see you. What would you like to know about borrowing?", "timestamp": "2026-02-14T04:44:27.383Z"}
+{"user_message": "What types of loans do you offer?", "bot_response": "Our loans start from 8.5% interest. Use the eligibility checker to see what you qualify for.", "timestamp": "2026-02-14T04:44:40.360Z"}
+{"user_message": "how to check eligi", "bot_response": "I understand you need assistance. Could you please be more specific? You can ask about loans, EMI, eligibility, or interest rates.", "timestamp": "2026-02-14T04:44:51.661Z"}

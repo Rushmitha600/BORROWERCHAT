@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator-header">
+        <button class="back-btn" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i> Back to FAQ
+        </button>
+        <h2><i class="fas fa-check-circle"></i> Eligibility Checker</h2>
+    </div>
+    
+    <div class="eligibility-container">
+        <div class="input-section">
+            <div class="input-group">
+                <label>Monthly Income (₹)</label>
+                <input type="number" id="eligibilityIncome" value="50000">
+            </div>
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" id="eligibilityAge" value="30">
+            </div>
+            <div class="input-group">
+                <label>Credit Score</label>
+                <select id="eligibilityCreditScore">
+                    <option value="850">Excellent (800+)</option>
+                    <option value="770">Good (750-799)</option>
+                    <option value="720">Fair (700-749)</option>
+                    <option value="670">Poor (650-699)</option>
+                    <option value="620">Very Poor (600-649)</option>
+                    <option value="550">Bad (Below 600)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Existing EMI (₹)</label>
+                <input type="number" id="eligibilityExistingEmi" value="0">
+            </div>
+            <button class="calculate-btn" onclick="checkEligibility()">
+                <i class="fas fa-search"></i> Check Eligibility
+            </button>
+        </div>
+
+        <div class="result-section" id="eligibilityResult">
+            <!-- Results will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

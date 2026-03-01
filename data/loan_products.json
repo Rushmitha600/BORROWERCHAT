@@ -1,0 +1,34 @@
+{
+  "personal": {
+    "name": "Personal Loan",
+    "interest_rate": 10.5,
+    "processing_fee": 1.5,
+    "min_amount": 10000,
+    "max_amount": 2500000,
+    "min_tenure": 12,
+    "max_tenure": 60,
+    "features": ["No collateral", "Quick approval", "Minimal documentation"],
+    "eligibility": {
+      "min_age": 21,
+      "max_age": 60,
+      "min_income": 25000,
+      "min_credit_score": 650
+    }
+  },
+  "home": {
+    "name": "Home Loan",
+    "interest_rate": 8.5,
+    "processing_fee": 0.5,
+    "min_amount": 500000,
+    "max_amount": 10000000,
+    "min_tenure": 12,
+    "max_tenure": 360,
+    "features": ["Long tenure", "Tax benefits", "Fixed/ floating options"],
+    "eligibility": {
+      "min_age": 21,
+      "max_age": 65,
+      "min_income": 35000,
+      "min_credit_score": 700
+    }
+  }
+}

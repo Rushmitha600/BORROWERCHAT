@@ -1,0 +1,29 @@
+{
+  "banks": {
+    "sbi": {
+      "home_loan": {
+        "min_income": 25000,
+        "min_credit_score": 700,
+        "interest_rate": "8.5% - 9.5%",
+        "max_tenure": "30 years",
+        "documents": ["Aadhar", "PAN", "Salary Slips"]
+      },
+      "personal_loan": {
+        "min_income": 20000,
+        "min_credit_score": 680,
+        "interest_rate": "10.5% - 18%",
+        "max_tenure": "5 years",
+        "documents": ["Aadhar", "PAN", "Bank Statement"]
+      }
+    },
+    "hdfc": {
+      "home_loan": {
+        "min_income": 30000,
+        "min_credit_score": 720,
+        "interest_rate": "8.6% - 9.8%",
+        "max_tenure": "30 years",
+        "documents": ["Aadhar", "PAN", "Salary Slips"]
+      }
+    }
+  }
+}

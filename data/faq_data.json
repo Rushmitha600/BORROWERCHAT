@@ -1,0 +1,842 @@
+[
+    {
+        "id": 1,
+        "question": "What are the current interest rates for personal loans?",
+        "answer": "Personal loan interest rates currently range from 10.5% to 18% p.a. depending on your credit score and relationship with the bank. SBI offers from 10.5%, HDFC from 10.75%, ICICI from 11%, and Axis from 11.25%.",
+        "emoji": "💰",
+        "category": "interest_rates",
+        "tags": ["interest", "rates", "personal loan", "percentage", "current"]
+    },
+    {
+        "id": 2,
+        "question": "What are home loan interest rates in SBI?",
+        "answer": "SBI home loan rates start from 8.5% p.a. for salaried individuals. Women borrowers get 0.05% concession. Rates are linked to credit score: 800+ (8.5%), 750-799 (8.75%), 700-749 (9%), 650-699 (9.5%).",
+        "emoji": "🏠",
+        "category": "interest_rates",
+        "tags": ["sbi", "home loan", "interest", "state bank"]
+    },
+    {
+        "id": 3,
+        "question": "What are HDFC Bank car loan rates?",
+        "answer": "HDFC Bank car loan rates: New cars (9.25% - 12%), Used cars (12% - 16%). Electric vehicles get 0.5% concession. Special rates for HDFC salary account customers.",
+        "emoji": "🚗",
+        "category": "interest_rates",
+        "tags": ["hdfc", "car loan", "auto loan", "vehicle"]
+    },
+    {
+        "id": 4,
+        "question": "What are ICICI Bank education loan interest rates?",
+        "answer": "ICICI Bank education loan rates: Studies in India (11% - 13%), Studies abroad (12% - 15%). Loan amount above ₹50 lakhs may have lower rates. Merit scholarships available for 90%+ scores.",
+        "emoji": "🎓",
+        "category": "interest_rates",
+        "tags": ["icici", "education loan", "student loan", "study"]
+    },
+    {
+        "id": 5,
+        "question": "What are Axis Bank personal loan rates?",
+        "answer": "Axis Bank personal loan rates start from 11.25% p.a. for existing customers. New customers: 12% - 18%. Pre-approved offers available on Axis mobile app.",
+        "emoji": "💰",
+        "category": "interest_rates",
+        "tags": ["axis", "personal loan", "rates"]
+    },
+    {
+        "id": 6,
+        "question": "What are PNB home loan interest rates?",
+        "answer": "PNB home loan rates: Up to ₹30 lakhs (8.5% - 9%), ₹30-75 lakhs (8.75% - 9.25%), Above ₹75 lakhs (9% - 9.5%). PNB customers get 0.25% concession.",
+        "emoji": "🏠",
+        "category": "interest_rates",
+        "tags": ["pnb", "punjab national", "home loan"]
+    },
+    {
+        "id": 7,
+        "question": "What are Bank of Baroda car loan rates?",
+        "answer": "Bank of Baroda car loan rates: New cars (9.5% - 13%), Used cars (12% - 15%). Electric vehicles: 8.75% - 11%. Special rates for women: 0.10% concession.",
+        "emoji": "🚗",
+        "category": "interest_rates",
+        "tags": ["bob", "bank of baroda", "car loan"]
+    },
+    {
+        "id": 8,
+        "question": "What are Canara Bank education loan rates?",
+        "answer": "Canara Bank education loan: Up to ₹4 lakhs (10.5% - 12%), ₹4-10 lakhs (11% - 13%), Above ₹10 lakhs (11.5% - 14%). No collateral for loans up to ₹7.5 lakhs.",
+        "emoji": "🎓",
+        "category": "interest_rates",
+        "tags": ["canara", "education loan", "student"]
+    },
+    {
+        "id": 9,
+        "question": "What are Kotak Mahindra Bank personal loan rates?",
+        "answer": "Kotak Mahindra personal loan rates: 11% - 17% p.a. Instant approval for Kotak account holders. 811 account holders get special rates.",
+        "emoji": "💰",
+        "category": "interest_rates",
+        "tags": ["kotak", "personal loan", "rates"]
+    },
+    {
+        "id": 10,
+        "question": "What are Union Bank home loan rates?",
+        "answer": "Union Bank home loan rates: Up to ₹30 lakhs (8.6% - 9.1%), ₹30-75 lakhs (8.85% - 9.35%), Above ₹75 lakhs (9.1% - 9.6%). No processing fee for women.",
+        "emoji": "🏠",
+        "category": "interest_rates",
+        "tags": ["union bank", "home loan", "rates"]
+    },
+    {
+        "id": 11,
+        "question": "What are IDFC First Bank car loan rates?",
+        "answer": "IDFC First Bank car loan: New cars (9.75% - 13%), Used cars (13% - 16%). Green vehicles: 9.25% - 12%. Zero processing fee for first-time buyers.",
+        "emoji": "🚗",
+        "category": "interest_rates",
+        "tags": ["idfc", "car loan", "first bank"]
+    },
+    {
+        "id": 12,
+        "question": "What are Yes Bank education loan rates?",
+        "answer": "Yes Bank education loan: India (11.5% - 14%), Abroad (12.5% - 16%). Merit scholarship: 1% concession for 90%+ in XII. Loan amount up to ₹1.5 crore for abroad studies.",
+        "emoji": "🎓",
+        "category": "interest_rates",
+        "tags": ["yes bank", "education", "student loan"]
+    },
+    {
+        "id": 13,
+        "question": "What are IndusInd Bank personal loan rates?",
+        "answer": "IndusInd Bank personal loan: 11.5% - 18% p.a. Special rates for professionals: Doctors, CAs, Architects get 0.5% concession. Pre-approved offers on IndusInd app.",
+        "emoji": "💰",
+        "category": "interest_rates",
+        "tags": ["indusind", "personal loan", "professional"]
+    },
+    {
+        "id": 14,
+        "question": "What are Bank of India home loan rates?",
+        "answer": "Bank of India home loan: Up to ₹30 lakhs (8.55% - 9.05%), ₹30-75 lakhs (8.8% - 9.3%), Above ₹75 lakhs (9.05% - 9.55%). Star customers get 0.10% concession.",
+        "emoji": "🏠",
+        "category": "interest_rates",
+        "tags": ["boi", "bank of india", "home loan"]
+    },
+    {
+        "id": 15,
+        "question": "What are Central Bank car loan rates?",
+        "answer": "Central Bank car loan: New cars (9.75% - 13%), Used cars (13% - 16%). Electric vehicles: 9.25% - 12%. Government employees get 0.25% concession.",
+        "emoji": "🚗",
+        "category": "interest_rates",
+        "tags": ["central bank", "car loan", "government"]
+    },
+    {
+        "id": 16,
+        "question": "What are Indian Bank education loan rates?",
+        "answer": "Indian Bank education loan: Up to ₹4 lakhs (10.25% - 11.75%), ₹4-10 lakhs (10.75% - 12.75%), Above ₹10 lakhs (11.25% - 13.75%). Girl students get 0.50% concession.",
+        "emoji": "🎓",
+        "category": "interest_rates",
+        "tags": ["indian bank", "education", "girls concession"]
+    },
+    {
+        "id": 17,
+        "question": "What are UCO Bank personal loan rates?",
+        "answer": "UCO Bank personal loan: 11% - 16% p.a. Pensioners get special rates: 10.5% - 14%. UCO account holders get faster approval.",
+        "emoji": "💰",
+        "category": "interest_rates",
+        "tags": ["uco", "personal loan", "pensioner"]
+    },
+    {
+        "id": 18,
+        "question": "What are Syndicate Bank home loan rates?",
+        "answer": "Syndicate Bank home loan: Up to ₹30 lakhs (8.6% - 9.1%), ₹30-75 lakhs (8.85% - 9.35%), Above ₹75 lakhs (9.1% - 9.6%). Low income group schemes available.",
+        "emoji": "🏠",
+        "category": "interest_rates",
+        "tags": ["syndicate", "home loan", "low income"]
+    },
+    {
+        "id": 19,
+        "question": "What are Corporation Bank car loan rates?",
+        "answer": "Corporation Bank car loan: New cars (9.5% - 12.5%), Used cars (12.5% - 15.5%). Women: 0.10% concession. Green vehicles: Additional 0.25% off.",
+        "emoji": "🚗",
+        "category": "interest_rates",
+        "tags": ["corporation", "car loan", "green vehicle"]
+    },
+    {
+        "id": 20,
+        "question": "What are Andhra Bank education loan rates?",
+        "answer": "Andhra Bank education loan: India (11% - 13.5%), Abroad (12% - 15%). Merit scholarship: 1% off for 95%+ in XII. Loan up to ₹20 lakhs without collateral.",
+        "emoji": "🎓",
+        "category": "interest_rates",
+        "tags": ["andhra", "education", "merit"]
+    },
+    {
+        "id": 21,
+        "question": "Am I eligible for SBI personal loan?",
+        "answer": "SBI personal loan eligibility: Age 21-60 years, Monthly income ₹25,000+, Credit score 650+, Employment 1+ years. SBI salary account holders get faster approval.",
+        "emoji": "✅",
+        "category": "eligibility",
+        "tags": ["sbi", "eligible", "personal loan", "criteria"]
+    },
+    {
+        "id": 22,
+        "question": "Am I eligible for HDFC home loan?",
+        "answer": "HDFC home loan eligibility: Age 21-65 years, Income ₹30,000+/month, Credit score 650+, Property value min ₹10 lakhs. Joint applicants increase eligibility by 40%.",
+        "emoji": "🏠",
+        "category": "eligibility",
+        "tags": ["hdfc", "home loan", "joint loan", "property"]
+    },
+    {
+        "id": 23,
+        "question": "Am I eligible for ICICI car loan?",
+        "answer": "ICICI car loan eligibility: Age 21-60 years, Income ₹20,000+/month, Credit score 600+. New cars: Min income ₹15,000. Used cars: Min income ₹20,000, max car age 5 years.",
+        "emoji": "🚗",
+        "category": "eligibility",
+        "tags": ["icici", "car loan", "used car", "new car"]
+    },
+    {
+        "id": 24,
+        "question": "Am I eligible for Axis education loan?",
+        "answer": "Axis education loan eligibility: Age 16-35 years, Admission to recognized course, Co-applicant with income required. For loans >₹4 lakhs: Co-applicant income ₹25,000+/month.",
+        "emoji": "🎓",
+        "category": "eligibility",
+        "tags": ["axis", "education", "co-applicant", "student"]
+    },
+    {
+        "id": 25,
+        "question": "Am I eligible for PNB personal loan?",
+        "answer": "PNB personal loan eligibility: Age 21-60 years, Income ₹20,000+/month, Credit score 650+, PNB account holders get priority. Pensioners: Age up to 70 years, pension ₹10,000+.",
+        "emoji": "✅",
+        "category": "eligibility",
+        "tags": ["pnb", "personal loan", "pensioner", "criteria"]
+    },
+    {
+        "id": 26,
+        "question": "Am I eligible for Bank of Baroda home loan?",
+        "answer": "BOB home loan eligibility: Age 21-70 years, Income ₹25,000+/month, Credit score 650+. NRI eligibility: Age 24-65, income $2,000+/month, NRE/NRO account holders.",
+        "emoji": "🏠",
+        "category": "eligibility",
+        "tags": ["bob", "home loan", "nri", "criteria"]
+    },
+    {
+        "id": 27,
+        "question": "Am I eligible for Canara Bank car loan?",
+        "answer": "Canara Bank car loan: Age 21-65 years, Income ₹15,000+/month, Credit score 600+. For used cars: Car age <5 years, income ₹20,000+. Government employees: Simplified docs.",
+        "emoji": "🚗",
+        "category": "eligibility",
+        "tags": ["canara", "car loan", "government", "used car"]
+    },
+    {
+        "id": 28,
+        "question": "Am I eligible for Kotak education loan?",
+        "answer": "Kotak education loan: Student age 16-35, Co-applicant age 25-60, Co-applicant income ₹30,000+/month. For premier institutes: Lower income criteria, faster approval.",
+        "emoji": "🎓",
+        "category": "eligibility",
+        "tags": ["kotak", "education", "premier institute", "iit"]
+    },
+    {
+        "id": 29,
+        "question": "Am I eligible for Union Bank personal loan?",
+        "answer": "Union Bank personal loan: Age 21-60 years, Income ₹20,000+/month, Credit score 650+. Government employees: Income ₹15,000+, simplified process. Pensioners: Age up to 75 years.",
+        "emoji": "✅",
+        "category": "eligibility",
+        "tags": ["union", "personal loan", "government", "pension"]
+    },
+    {
+        "id": 30,
+        "question": "Am I eligible for IDFC home loan?",
+        "answer": "IDFC home loan: Age 21-65 years, Income ₹30,000+/month, Credit score 700+. Self-employed: 3 years ITR, business vintage 3+ years. Salaried: 2 years experience.",
+        "emoji": "🏠",
+        "category": "eligibility",
+        "tags": ["idfc", "home loan", "self employed", "salaried"]
+    },
+    {
+        "id": 31,
+        "question": "Am I eligible for Yes Bank car loan?",
+        "answer": "Yes Bank car loan: Age 21-65 years, Income ₹20,000+/month, Credit score 650+. For luxury cars (>₹50 lakhs): Income ₹1 lakh+/month, credit score 750+.",
+        "emoji": "🚗",
+        "category": "eligibility",
+        "tags": ["yes bank", "car loan", "luxury car", "premium"]
+    },
+    {
+        "id": 32,
+        "question": "Am I eligible for IndusInd education loan?",
+        "answer": "IndusInd education loan: Student age 16-40, Co-applicant age 25-65, Co-applicant income ₹35,000+/month. For STEM courses: Lower interest, higher eligibility.",
+        "emoji": "🎓",
+        "category": "eligibility",
+        "tags": ["indusind", "education", "stem", "engineering"]
+    },
+    {
+        "id": 33,
+        "question": "Am I eligible for Bank of India personal loan?",
+        "answer": "BOI personal loan: Age 21-60 years, Income ₹20,000+/month, Credit score 650+. BOI Star customers: Income ₹15,000+, faster approval. Pensioners: Age up to 75 years.",
+        "emoji": "✅",
+        "category": "eligibility",
+        "tags": ["boi", "personal loan", "star customer", "pension"]
+    },
+    {
+        "id": 34,
+        "question": "Am I eligible for Central Bank home loan?",
+        "answer": "Central Bank home loan: Age 21-70 years, Income ₹25,000+/month, Credit score 650+. Rural areas: Lower income criteria (₹15,000+). Agricultural land loan also available.",
+        "emoji": "🏠",
+        "category": "eligibility",
+        "tags": ["central", "home loan", "rural", "agriculture"]
+    },
+    {
+        "id": 35,
+        "question": "Am I eligible for Indian Bank car loan?",
+        "answer": "Indian Bank car loan: Age 21-65 years, Income ₹15,000+/month, Credit score 600+. For commercial vehicles: Business proof required, higher income criteria.",
+        "emoji": "🚗",
+        "category": "eligibility",
+        "tags": ["indian", "car loan", "commercial", "vehicle"]
+    },
+    {
+        "id": 36,
+        "question": "Am I eligible for UCO education loan?",
+        "answer": "UCO education loan: Student age 16-40, Co-applicant income ₹25,000+/month. For professional courses (MBA, Medical): Higher eligibility, lower interest.",
+        "emoji": "🎓",
+        "category": "eligibility",
+        "tags": ["uco", "education", "mba", "medical", "professional"]
+    },
+    {
+        "id": 37,
+        "question": "Am I eligible for Syndicate personal loan?",
+        "answer": "Syndicate personal loan: Age 21-60 years, Income ₹18,000+/month, Credit score 650+. Low income groups: Special schemes available with ₹10,000+ income.",
+        "emoji": "✅",
+        "category": "eligibility",
+        "tags": ["syndicate", "personal loan", "low income", "schemes"]
+    },
+    {
+        "id": 38,
+        "question": "Am I eligible for Corporation home loan?",
+        "answer": "Corporation home loan: Age 21-70 years, Income ₹20,000+/month, Credit score 650+. For economically weaker sections: Lower interest, government subsidy available.",
+        "emoji": "🏠",
+        "category": "eligibility",
+        "tags": ["corporation", "home loan", "ews", "subsidy"]
+    },
+    {
+        "id": 39,
+        "question": "Am I eligible for Andhra car loan?",
+        "answer": "Andhra Bank car loan: Age 21-65 years, Income ₹15,000+/month, Credit score 600+. For auto-rickshaw/taxi: Special schemes with lower down payment.",
+        "emoji": "🚗",
+        "category": "eligibility",
+        "tags": ["andhra", "car loan", "taxi", "auto", "commercial"]
+    },
+    {
+        "id": 40,
+        "question": "Am I eligible for Punjab & Sind education loan?",
+        "answer": "Punjab & Sind education loan: Student age 16-40, Co-applicant income ₹20,000+/month. For minority communities: Special schemes, lower interest rates.",
+        "emoji": "🎓",
+        "category": "eligibility",
+        "tags": ["punjab sind", "education", "minority", "schemes"]
+    },
+    {
+        "id": 41,
+        "question": "What documents needed for SBI personal loan?",
+        "answer": "SBI personal loan documents: Identity (Aadhar/PAN), Address proof, Last 3 months salary slips, Form 16, Last 6 months bank statements, 2 passport photos.",
+        "emoji": "📄",
+        "category": "documents",
+        "tags": ["sbi", "documents", "personal loan", "paperwork"]
+    },
+    {
+        "id": 42,
+        "question": "What documents needed for HDFC home loan?",
+        "answer": "HDFC home loan documents: Identity & address proof, Income proof (3 years ITR for self-employed, 6 months salary slips for salaried), Property papers, Bank statements 12 months, Processing fee cheque.",
+        "emoji": "🏠",
+        "category": "documents",
+        "tags": ["hdfc", "documents", "home loan", "property papers"]
+    },
+    {
+        "id": 43,
+        "question": "What documents needed for ICICI car loan?",
+        "answer": "ICICI car loan documents: ID proof, Address proof, Income proof, Bank statements 6 months, Car quotation, Down payment receipt, PAN card, Photos.",
+        "emoji": "🚗",
+        "category": "documents",
+        "tags": ["icici", "documents", "car loan", "quotation"]
+    },
+    {
+        "id": 44,
+        "question": "What documents needed for Axis education loan?",
+        "answer": "Axis education loan documents: Student ID, Admission letter, Fee structure, Previous mark sheets, Co-applicant income proof & bank statements, Collateral docs (if applicable).",
+        "emoji": "🎓",
+        "category": "documents",
+        "tags": ["axis", "education", "documents", "admission"]
+    },
+    {
+        "id": 45,
+        "question": "What documents needed for PNB personal loan?",
+        "answer": "PNB personal loan documents: Aadhar, PAN, Voter ID/Passport, Salary slips 3 months, Bank statements 6 months, Form 16, Employment proof, Photos.",
+        "emoji": "📄",
+        "category": "documents",
+        "tags": ["pnb", "personal loan", "documents", "salary slips"]
+    },
+    {
+        "id": 46,
+        "question": "What documents needed for Bank of Baroda home loan?",
+        "answer": "BOB home loan documents: ID proof, Address proof, Income proof (ITR 3 years for self-employed), Property valuation report, Sale agreement, Allotment letter, NOC from builder.",
+        "emoji": "🏠",
+        "category": "documents",
+        "tags": ["bob", "home loan", "property", "builder"]
+    },
+    {
+        "id": 47,
+        "question": "What documents needed for Canara Bank car loan?",
+        "answer": "Canara Bank car loan: ID proof, Address proof, Income proof, Bank statements 6 months, Proforma invoice, RC copy (for used cars), Insurance copy.",
+        "emoji": "🚗",
+        "category": "documents",
+        "tags": ["canara", "car loan", "invoice", "rc"]
+    },
+    {
+        "id": 48,
+        "question": "What documents needed for Kotak education loan?",
+        "answer": "Kotak education loan: Student documents, Admission letter, Fee schedule, Previous education certificates, Co-applicant income docs, Collateral docs (if >₹7.5 lakhs).",
+        "emoji": "🎓",
+        "category": "documents",
+        "tags": ["kotak", "education", "collateral", "certificates"]
+    },
+    {
+        "id": 49,
+        "question": "What documents needed for Union Bank personal loan?",
+        "answer": "Union Bank personal loan: ID, Address, Income proof, Bank statements 6 months, Employment certificate, Form 16, ITR (if self-employed), Photos.",
+        "emoji": "📄",
+        "category": "documents",
+        "tags": ["union", "personal loan", "itr", "employment"]
+    },
+    {
+        "id": 50,
+        "question": "What documents needed for IDFC home loan?",
+        "answer": "IDFC home loan: ID & address proof, Income docs (salary slips/ITR), Bank statements 12 months, Property papers (title deed, chain of ownership, NOC), Construction agreement.",
+        "emoji": "🏠",
+        "category": "documents",
+        "tags": ["idfc", "home loan", "title deed", "ownership"]
+    },
+    {
+        "id": 51,
+        "question": "What documents needed for Yes Bank car loan?",
+        "answer": "Yes Bank car loan: ID proof, Address proof, Income proof, Bank statements 6 months, Car invoice, Insurance, Registration (for used cars), Down payment receipt.",
+        "emoji": "🚗",
+        "category": "documents",
+        "tags": ["yes bank", "car loan", "registration", "insurance"]
+    },
+    {
+        "id": 52,
+        "question": "What documents needed for IndusInd education loan?",
+        "answer": "IndusInd education loan: Student KYC, Admission letter, Fee structure, Marksheets, Entrance exam scorecard, Co-applicant income docs, Property docs for collateral.",
+        "emoji": "🎓",
+        "category": "documents",
+        "tags": ["indusind", "education", "entrance", "scorecard"]
+    },
+    {
+        "id": 53,
+        "question": "What documents needed for Bank of India personal loan?",
+        "answer": "BOI personal loan: ID, Address, Income proof, Bank statements 6 months, Employment proof, IT returns (self-employed), Salary account statement, Photos.",
+        "emoji": "📄",
+        "category": "documents",
+        "tags": ["boi", "personal loan", "salary account", "itr"]
+    },
+    {
+        "id": 54,
+        "question": "What documents needed for Central Bank home loan?",
+        "answer": "Central Bank home loan: ID & address proof, Income docs, Bank statements 12 months, Property papers, Valuation report, Construction estimate (for under-construction), NOC from society.",
+        "emoji": "🏠",
+        "category": "documents",
+        "tags": ["central", "home loan", "valuation", "society"]
+    },
+    {
+        "id": 55,
+        "question": "What documents needed for Indian Bank car loan?",
+        "answer": "Indian Bank car loan: ID, Address, Income proof, Bank statements 6 months, Car details (model, price), Quotation from dealer, RC (used cars), Insurance.",
+        "emoji": "🚗",
+        "category": "documents",
+        "tags": ["indian", "car loan", "dealer", "quotation"]
+    },
+    {
+        "id": 56,
+        "question": "What documents needed for UCO education loan?",
+        "answer": "UCO education loan: Student documents, Admission proof, Fee structure, Previous academics, Co-applicant income docs, Collateral docs (if loan >₹4 lakhs), Guarantor details.",
+        "emoji": "🎓",
+        "category": "documents",
+        "tags": ["uco", "education", "guarantor", "collateral"]
+    },
+    {
+        "id": 57,
+        "question": "What documents needed for Syndicate personal loan?",
+        "answer": "Syndicate personal loan: ID, Address, Income proof, Bank statements, Employment certificate, Pension proof (for pensioners), ITR (self-employed), Photos.",
+        "emoji": "📄",
+        "category": "documents",
+        "tags": ["syndicate", "personal loan", "pension", "itr"]
+    },
+    {
+        "id": 58,
+        "question": "What documents needed for Corporation home loan?",
+        "answer": "Corporation home loan: ID, Address, Income proof, Bank statements, Property papers, Tax receipts, NOC from society, Construction agreement, Valuation report.",
+        "emoji": "🏠",
+        "category": "documents",
+        "tags": ["corporation", "home loan", "tax receipt", "valuation"]
+    },
+    {
+        "id": 59,
+        "question": "What documents needed for Andhra car loan?",
+        "answer": "Andhra Bank car loan: ID, Address, Income proof, Bank statements, Quotation, RC (used cars), Insurance, Pollution certificate, Down payment proof.",
+        "emoji": "🚗",
+        "category": "documents",
+        "tags": ["andhra", "car loan", "pollution", "down payment"]
+    },
+    {
+        "id": 60,
+        "question": "What documents needed for Punjab & Sind education loan?",
+        "answer": "Punjab & Sind education loan: Student KYC, Admission letter, Fee schedule, Marksheets, Entrance score, Co-applicant income, Collateral docs, Scholarship proof (if any).",
+        "emoji": "🎓",
+        "category": "documents",
+        "tags": ["punjab sind", "education", "scholarship", "entrance"]
+    },
+    {
+        "id": 61,
+        "question": "How to improve credit score for SBI loan?",
+        "answer": "Improve credit score for SBI: Pay all EMIs on time, Keep credit utilization <30%, Don't close old cards, Check CIBIL report yearly, Dispute errors, Have mix of loans.",
+        "emoji": "📈",
+        "category": "credit_score",
+        "tags": ["sbi", "credit score", "improve", "cibil"]
+    },
+    {
+        "id": 62,
+        "question": "What is minimum credit score for HDFC home loan?",
+        "answer": "HDFC home loan minimum credit score: 650 for approval, 750+ for best rates. Below 650: Higher interest,可能需要 additional security.",
+        "emoji": "📊",
+        "category": "credit_score",
+        "tags": ["hdfc", "minimum", "credit score", "home loan"]
+    },
+    {
+        "id": 63,
+        "question": "How to check CIBIL score for free?",
+        "answer": "Free CIBIL score check: CRED app, Paytm, Google Pay, Amazon Pay, Bank apps (SBI YONO, HDFC NetBanking), Official CIBIL site (1 free/year), Experian, Equifax.",
+        "emoji": "🔍",
+        "category": "credit_score",
+        "tags": ["cibil", "free", "check", "score", "app"]
+    },
+    {
+        "id": 64,
+        "question": "What is good credit score for Axis car loan?",
+        "answer": "Axis car loan credit score: 750+ (Best rates), 700-749 (Good rates), 650-699 (Moderate rates), Below 650 (Higher rates,可能 approval issues).",
+        "emoji": "🚗",
+        "category": "credit_score",
+        "tags": ["axis", "car loan", "good score", "cibil"]
+    },
+    {
+        "id": 65,
+        "question": "How long does credit score take to improve?",
+        "answer": "Credit score improvement timeline: On-time payments (3-6 months), Debt reduction (2-3 months), Error correction (1-2 months), Full recovery from default (12-24 months).",
+        "emoji": "⏰",
+        "category": "credit_score",
+        "tags": ["improve", "time", "duration", "recovery"]
+    },
+    {
+        "id": 66,
+        "question": "What is CIBIL score range?",
+        "answer": "CIBIL score range: 300-900. Excellent (800-900), Good (750-799), Fair (700-749), Poor (650-699), Bad (600-649), Very Bad (300-599).",
+        "emoji": "📊",
+        "category": "credit_score",
+        "tags": ["cibil", "range", "scale", "rating"]
+    },
+    {
+        "id": 67,
+        "question": "Does checking credit score affect it?",
+        "answer": "Soft inquiries (self-check, bank pre-approved offers) do NOT affect score. Hard inquiries (loan applications) may affect slightly (5-10 points). Multiple inquiries in short time harmful.",
+        "emoji": "🔍",
+        "category": "credit_score",
+        "tags": ["check", "inquiry", "hard", "soft", "affect"]
+    },
+    {
+        "id": 68,
+        "question": "How to get free credit report from CIBIL?",
+        "answer": "Get free CIBIL report: Visit cibil.com, Click 'Get your free credit report', Register with PAN, Verify identity, Download report. One free report per year.",
+        "emoji": "📄",
+        "category": "credit_score",
+        "tags": ["cibil", "free report", "download", "pan"]
+    },
+    {
+        "id": 69,
+        "question": "What is EMI and how is it calculated?",
+        "answer": "EMI = [P x R x (1+R)^N] / [(1+R)^N-1]. P=Principal, R=Monthly interest rate, N=Tenure months. Example: ₹10 lakhs at 10.5% for 5 years = ₹21,498/month.",
+        "emoji": "💳",
+        "category": "emi",
+        "tags": ["emi", "formula", "calculation", "example"]
+    },
+    {
+        "id": 70,
+        "question": "How to calculate EMI for home loan?",
+        "answer": "Home loan EMI example: ₹50 lakhs at 8.5% for 20 years = ₹43,391/month. Use EMI calculator. Factors: Amount, Rate, Tenure. Longer tenure = Lower EMI but more interest.",
+        "emoji": "🏠",
+        "category": "emi",
+        "tags": ["home loan", "emi", "calculator", "example"]
+    },
+    {
+        "id": 71,
+        "question": "Can I prepay my loan without charges?",
+        "answer": "Floating rate loans: No prepayment charges. Fixed rate loans: 2-5% charges. Partial prepayment: Min ₹10,000, allowed after 6-12 months. Some banks offer 1 free prepayment/year.",
+        "emoji": "⚡",
+        "category": "prepayment",
+        "tags": ["prepay", "charges", "floating", "fixed", "partial"]
+    },
+    {
+        "id": 72,
+        "question": "What happens if I miss EMI payment?",
+        "answer": "Missed EMI consequences: Late fee (2% per month), Credit score drops 50-100 points, Collection calls, NPA after 90 days, Legal action possible, Asset seizure in secured loans.",
+        "emoji": "⚠️",
+        "category": "penalty",
+        "tags": ["miss", "late", "penalty", "npa", "default"]
+    },
+    {
+        "id": 73,
+        "question": "What are processing fees for SBI loans?",
+        "answer": "SBI processing fees: Personal loan (1-1.5% + GST), Home loan (0.35-0.5% + GST), Car loan (0.5-1% + GST), Education loan (0.5-1% + GST). Waived for women/COVID warriors.",
+        "emoji": "💵",
+        "category": "fees",
+        "tags": ["sbi", "processing fees", "gst", "charges"]
+    },
+    {
+        "id": 74,
+        "question": "What are processing fees for HDFC loans?",
+        "answer": "HDFC processing fees: Personal loan (1-2.5% + GST), Home loan (0.5-1% + GST), Car loan (1-2% + GST), Education loan (1-1.5% + GST). Pre-approved offers have zero fees.",
+        "emoji": "💵",
+        "category": "fees",
+        "tags": ["hdfc", "processing fees", "pre-approved", "charges"]
+    },
+    {
+        "id": 75,
+        "question": "How long does SBI personal loan approval take?",
+        "answer": "SBI personal loan approval: Existing customers (2-4 hours), New customers (24-48 hours), Pre-approved offers (10 minutes). Disbursement within 24 hours of approval.",
+        "emoji": "⏰",
+        "category": "timeline",
+        "tags": ["sbi", "approval time", "disbursement", "how long"]
+    },
+    {
+        "id": 76,
+        "question": "Can I take multiple loans from different banks?",
+        "answer": "Yes, you can have multiple loans. Considerations: FOIR <50%, Each application affects credit score, Total EMI should not exceed 50% of income, Maintain repayment history.",
+        "emoji": "🔄",
+        "category": "general",
+        "tags": ["multiple", "different banks", "foir", "debt"]
+    },
+    {
+        "id": 77,
+        "question": "What is loan tenure for SBI home loan?",
+        "answer": "SBI home loan tenure: Maximum 30 years, Up to retirement age (salaried), Up to 70 years (self-employed). Longer tenure available for younger applicants.",
+        "emoji": "⏳",
+        "category": "tenure",
+        "tags": ["sbi", "home loan", "tenure", "duration"]
+    },
+    {
+        "id": 78,
+        "question": "What is EMI for ₹10 lakhs personal loan?",
+        "answer": "EMI for ₹10 lakhs personal loan: 3 years (₹32,500 at 12%), 4 years (₹26,800 at 12%), 5 years (₹22,800 at 12%). Use EMI calculator for exact amount.",
+        "emoji": "💳",
+        "category": "emi",
+        "tags": ["example", "personal loan", "10 lakhs", "calculation"]
+    },
+    {
+        "id": 79,
+        "question": "Can I get loan if I'm self-employed without ITR?",
+        "answer": "Self-employed without ITR: Difficult to get loans. Options: Business proof, GST returns (1 year), Bank statements (12 months), Alternate income proof. Higher interest rates.",
+        "emoji": "💼",
+        "category": "self_employed",
+        "tags": ["self employed", "itr", "business", "gst"]
+    },
+    {
+        "id": 80,
+        "question": "What is overdraft facility against FD?",
+        "answer": "Overdraft against FD: Up to 90% of FD amount, Interest only on used amount, Repayment flexible, Interest rate FD rate + 1-2%, Quick approval, No income proof needed.",
+        "emoji": "🏦",
+        "category": "products",
+        "tags": ["overdraft", "fd", "fixed deposit", "loan against fd"]
+    },
+    {
+        "id": 81,
+        "question": "What is loan against property (LAP)?",
+        "answer": "Loan Against Property: Up to 60-70% of property value, Interest rates 9-12%, Tenure up to 15 years, For business/personal needs, Lower rates than personal loans.",
+        "emoji": "🏢",
+        "category": "products",
+        "tags": ["lap", "loan against property", "mortgage", "property loan"]
+    },
+    {
+        "id": 82,
+        "question": "What is gold loan interest rate in SBI?",
+        "answer": "SBI gold loan rates: 7.5% - 9% p.a., Loan up to 75% of gold value, No income proof needed, Quick disbursement, Repayment flexible, Interest only on used amount.",
+        "emoji": "🥇",
+        "category": "products",
+        "tags": ["sbi", "gold loan", "interest", "jewelry"]
+    },
+    {
+        "id": 83,
+        "question": "What is two-wheeler loan interest rate?",
+        "answer": "Two-wheeler loan rates: 10% - 15% p.a., Loan up to 90% of bike value, Tenure 12-48 months, Down payment 10-20%, Quick approval, Minimal documents.",
+        "emoji": "🏍️",
+        "category": "products",
+        "tags": ["bike", "two wheeler", "motorcycle", "scooter"]
+    },
+    {
+        "id": 84,
+        "question": "What is business loan interest rate?",
+        "answer": "Business loan rates: MUDRA loans (8-11%), MSME loans (10-14%), Term loans (11-16%), Working capital (12-15%). Rates depend on turnover, vintage, credit score.",
+        "emoji": "💼",
+        "category": "products",
+        "tags": ["business", "mudra", "msme", "working capital"]
+    },
+    {
+        "id": 85,
+        "question": "What is credit card loan interest rate?",
+        "answer": "Credit card loan/EMI rates: 12% - 24% p.a., Convert purchases to EMI, No additional documents, Instant approval, Available on app, Lower than revolving credit.",
+        "emoji": "💳",
+        "category": "products",
+        "tags": ["credit card", "emi conversion", "card loan"]
+    },
+    {
+        "id": 86,
+        "question": "What is doctor loan scheme in SBI?",
+        "answer": "SBI doctor loan: Up to ₹50 lakhs, 9.5% - 11% interest, For clinic setup/equipment, 7 years tenure, No collateral up to ₹20 lakhs, Special for medical professionals.",
+        "emoji": "👨‍⚕️",
+        "category": "special",
+        "tags": ["doctor", "medical", "clinic", "equipment"]
+    },
+    {
+        "id": 87,
+        "question": "What is CA loan scheme in HDFC?",
+        "answer": "HDFC CA loan: Up to ₹75 lakhs, 9.5% - 11.5% interest, For practice setup/equipment, 8 years tenure, Flexible repayment, Special for chartered accountants.",
+        "emoji": "📊",
+        "category": "special",
+        "tags": ["ca", "chartered accountant", "practice"]
+    },
+    {
+        "id": 88,
+        "question": "What is pensioner loan scheme?",
+        "answer": "Pensioner loan: Age up to 75-80 years, Loan up to ₹10 lakhs, Interest 10-13%, Pension as income proof, No employment proof needed, Quick approval.",
+        "emoji": "👴",
+        "category": "special",
+        "tags": ["pensioner", "senior citizen", "pension loan"]
+    },
+    {
+        "id": 89,
+        "question": "What is farmer loan scheme in SBI?",
+        "answer": "SBI farmer loan: Kisan Credit Card (7-9%), Crop loan (7-8.5%), Farm equipment loan (9-11%), Interest subvention for prompt payers, Government subsidy available.",
+        "emoji": "🌾",
+        "category": "special",
+        "tags": ["farmer", "agriculture", "kisan", "crop"]
+    },
+    {
+        "id": 90,
+        "question": "What is women loan scheme in banks?",
+        "answer": "Women loan schemes: 0.05-0.25% interest concession, Lower processing fees, Special schemes (Bharat Mahila Bank, Stree Shakti), Priority processing, Government schemes available.",
+        "emoji": "👩",
+        "category": "special",
+        "tags": ["women", "mahila", "stree shakti", "concession"]
+    },
+    {
+        "id": 91,
+        "question": "What is NRI loan eligibility in SBI?",
+        "answer": "SBI NRI loan: Age 24-65 years, Income $2,000+/month, NRE/NRO account required, Property in India, Co-applicant allowed, Higher interest for NRI.",
+        "emoji": "🌏",
+        "category": "nri",
+        "tags": ["nri", "overseas", "foreign", "dollar"]
+    },
+    {
+        "id": 92,
+        "question": "What is loan against shares/securities?",
+        "answer": "Loan against shares: Up to 50% of share value, Interest 9-12%, For listed shares, Quick disbursement, No income proof, Shares held in demat, Margin call if value drops.",
+        "emoji": "📈",
+        "category": "products",
+        "tags": ["shares", "securities", "demat", "stocks"]
+    },
+    {
+        "id": 93,
+        "question": "What is loan against insurance policy?",
+        "answer": "Loan against insurance: Up to 90% of surrender value, Interest 10-12%, For traditional plans, ULIPs, Quick processing, Policy continues, No repayment fixed schedule.",
+        "emoji": "🛡️",
+        "category": "products",
+        "tags": ["insurance", "policy", "life insurance", "surrender"]
+    },
+    {
+        "id": 94,
+        "question": "What is solar loan scheme?",
+        "answer": "Solar loan: For rooftop/solar plants, Interest 7-9% with subsidy, Tenure up to 10 years, Government subsidy available, Green energy focus, Lower rates.",
+        "emoji": "☀️",
+        "category": "special",
+        "tags": ["solar", "green", "renewable", "energy"]
+    },
+    {
+        "id": 95,
+        "question": "What is electric vehicle (EV) loan?",
+        "answer": "EV loan: 0.25-0.5% concession on car loans, Special schemes from banks, Faster approval, Government subsidy pass-through, Lower EMI, Green initiative.",
+        "emoji": "⚡",
+        "category": "special",
+        "tags": ["ev", "electric vehicle", "green", "eco"]
+    },
+    {
+        "id": 96,
+        "question": "What is home renovation loan?",
+        "answer": "Home renovation loan: Up to ₹20 lakhs, Interest 9-12%, Tenure up to 7 years, For repair/renovation, No collateral, Quick approval, Home improvement focus.",
+        "emoji": "🔨",
+        "category": "products",
+        "tags": ["renovation", "repair", "home improvement", "modification"]
+    },
+    {
+        "id": 97,
+        "question": "What is plot loan?",
+        "answer": "Plot loan: For land purchase, Interest 8.5-11%, Tenure up to 15 years, Loan up to 70-80% of plot value, Construction later, Higher rates than home loan.",
+        "emoji": "🗺️",
+        "category": "products",
+        "tags": ["plot", "land", "site", "construction"]
+    },
+    {
+        "id": 98,
+        "question": "What is balance transfer facility?",
+        "answer": "Balance transfer: Move loan to another bank for lower interest, Processing fee 0.5-1%, Save on interest, Top-up available, Better terms, Improved credit score.",
+        "emoji": "🔄",
+        "category": "general",
+        "tags": ["balance transfer", "refinance", "top up", "switch"]
+    },
+    {
+        "id": 99,
+        "question": "What is loan moratorium period?",
+        "answer": "Moratorium period: Loan repayment holiday, Interest accrues during period, Available for education loans (course + 1 year), Some banks offer for hardship cases, Extends tenure.",
+        "emoji": "⏸️",
+        "category": "general",
+        "tags": ["moratorium", "holiday", "pause", "deferment"]
+    },
+    {
+        "id": 100,
+        "question": "What is CIBIL default impact?",
+        "answer": "CIBIL default impact: Score drops 100-200 points, Loan rejection for 2-3 years, Higher interest future loans, Negative remark for 7 years, Difficulty in new credit.",
+        "emoji": "📉",
+        "category": "credit_score",
+        "tags": ["default", "impact", "negative", "cibil"]
+    },
+    {
+        "id": 101,
+        "question": "What is the difference between fixed and floating interest rate?",
+        "answer": "Fixed rate: Constant EMI, Protection from rate hikes, Usually higher initial rate. Floating rate: Changes with market, Lower initial rate, Benefits from rate cuts, Preferred for long tenure.",
+        "emoji": "⚖️",
+        "category": "interest_rates",
+        "tags": ["fixed", "floating", "comparison", "difference"]
+    },
+    {
+        "id": 102,
+        "question": "What is the current repo rate and its impact on loans?",
+        "answer": "Current repo rate: 6.5% (RBI). Impact: Repo rate hike increases loan EMIs, Repo rate cut decreases EMIs, External benchmark linked loans change immediately, Fixed rates unaffected.",
+        "emoji": "🏦",
+        "category": "interest_rates",
+        "tags": ["repo rate", "rbi", "monetary policy", "rate cut"]
+    },
+    {
+        "id": 103,
+        "question": "What is MCLR and how does it affect loans?",
+        "answer": "MCLR (Marginal Cost of Funds based Lending Rate): Internal benchmark for loans, Reset every year, Affects floating rate loans, Lower MCLR means lower EMI, Bank specific.",
+        "emoji": "📊",
+        "category": "interest_rates",
+        "tags": ["mclr", "benchmark", "lending rate", "reset"]
+    },
+    {
+        "id": 104,
+        "question": "What is the maximum loan amount for SBI personal loan?",
+        "answer": "SBI personal loan maximum: ₹25 lakhs for salaried, ₹15 lakhs for pensioners, ₹30 lakhs for government employees, Based on income multiple (15-20 times monthly income).",
+        "emoji": "💰",
+        "category": "loan_amount",
+        "tags": ["sbi", "maximum", "limit", "personal loan"]
+    },
+    {
+        "id": 105,
+        "question": "What is the maximum home loan amount from SBI?",
+        "answer": "SBI home loan maximum: Up to ₹5 crore for salaried, Up to ₹10 crore for high net worth, Based on property value (80-90% of property cost), FOIR based calculation.",
+        "emoji": "🏠",
+        "category": "loan_amount",
+        "tags": ["sbi", "maximum", "home loan", "property"]
+    }
+]
